@@ -99,11 +99,11 @@ class SudokuGUI(QMainWindow):
                 if num != 0:
                     cell.setText(str(num))
                     cell.setReadOnly(True)
-                    cell.setStyleSheet(cell.styleSheet() + "color: blue;")  # Prefilled numbers in blue
+                    cell.setStyleSheet(cell.styleSheet() + "color: turquoise;" + "background-color: #181818;")  # Prefilled numbers in blue
                 else:
                     cell.clear()
                     cell.setReadOnly(False)
-                    cell.setStyleSheet(cell.styleSheet() + "color: black;")
+                    cell.setStyleSheet(cell.styleSheet() + "color: black;"+ "background-color: #181818;")
 
     def solve_puzzle(self):
         """Begins animated solving process using a generator."""
