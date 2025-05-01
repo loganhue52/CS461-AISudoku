@@ -31,7 +31,7 @@ CS461-AISudoku/
 
 ## How It Works
 
-- The solver uses a backtracking algorithm to find a valid solution.
+- The solver uses a depth-first search with backtracking algorithm to find a valid solution.
 - A generator yields each step in the solving process, which is animated in the GUI.
 - Difficulty level controls the number of pre-filled cells.
 - The grid is updated in real time as the solver attempts and backtracks on values.
